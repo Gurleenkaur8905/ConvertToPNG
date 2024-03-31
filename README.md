@@ -14,6 +14,7 @@ coverToPng is a website designed for seamless conversion of images into PNG form
 ## Tech Stack
 
 Frontend: React
+
 Backend: Nodejs
 
 ## Contributing
