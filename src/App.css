@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 2rem;
+  background: linear-gradient(to right,
+      #303030,
+      #1a1a1a);
+  /* Linear gradient from dark gray to almost black */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  /* White */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1rem;
+  list-style-type: none;
+}
+
+#github {
+  padding: 5px 8px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.form-check-#lable_file {
+  color: #fff;
+}
+
+.App-header {
+  background-color: #282c34;
+  /* Dark blue */
+  min-height: calc(100vh - 67px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-image: url("/public/temp.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.inner {
+  max-width: 600px;
+  /* Reduced maximum width for better readability */
+  background-color: #282c34;
+  border: 2px solid #f8f9fa;
+  /* Light gray */
+  padding: 40px;
+  border-radius: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+  /* Adding transition for smoother appearance */
+}
+
+.App-header h1 {
+  margin-bottom: 35px;
+}
+
+.App-header p {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #21272a;
+  /* Blue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  /* Increased padding for better button appearance */
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 30px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  /* Adding transition for smoother appearance */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#span {
+  width: 98%;
+  font-size: 12px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.inner {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+form {
+  /* margin: 0 auto; */
+  /* padding: 10px; */
+  width: 95%;
+  height: auto;
+  overflow: hidden;
+  /* background: #ffffff; */
+  border-radius: 3px;
+  display: flex;
+  text-align: left;
+}
+
+#lable_file {
+  margin: 0;
+  padding: 10px;
+  width: 85%;
+  /* max-width: 300px; */
+  height: auto;
+  background-color: #929292;
+  font-size: 17px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+#dropdown {
+  position: absolute;
+  width: 82%;
+  background-color: #929292;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  right: 40px;
+  margin: 0;
+  padding: 0;
+  top: 182px;
+}
+
+#dropdown li {
+  list-style-type: none;
+  font-size: 18px;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#dropdown li:hover {
+  border-radius: 20px;
+  background-color: #7a7a7a;
+  /* Change color on hover */
+}
+
+#select {
+  margin: 0;
+  padding: 10px 20px;
+  height: auto;
+  background-color: #929292;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+#lable_file:hover {
+  background: #adadad;
+}
+
+[type="file"] {
+  display: none;
+}
+
+
+#urlInput {
+  width: 79% !important;
+  font-size: 20px;
+  padding-left: 6px;
+}
+
+@media screen and (max-width: 900px) {
+  #dropdown {
+    right: 34px;
+    top: 176px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  #dropdown {
+    right: 23px;
+    top: 141px;
+  }
+
+  #dropdown li {
+    font-size: 15px;
+  }
+
+  .inner {
+    padding: 20px;
+  }
+
+  .App-header h1 {
+    font-size: 22px;
+  }
+
+  form {
+    padding: 5px;
+    width: 100%;
+  }
+
+
+  #lable_file {
+    font-size: 16px;
+  }
+
+  button {
+    padding: 4px 13px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #dropdown {
+    right: 34px;
+    top: 170px;
+  }
+}
+
+@media screen and (max-width: 276px) {
+  #dropdown {
+    right: 23px;
+    top: 173px;
+  }
+}
